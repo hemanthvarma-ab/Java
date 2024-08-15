@@ -1,4 +1,4 @@
-1./* Inverted & Rotated Half Pyramid 
+/* 1. Inverted & Rotated Half Pyramid 
    *
   **
  ***
@@ -6,7 +6,7 @@
  
  */
 
-import java.util.Scannner;
+import java.util.Scanner;
 
  class hello{
     public static void main(String args []){
@@ -22,5 +22,34 @@ import java.util.Scannner;
             System.out.println();
         }
 
+    }
+ }
+
+/* 2. Hollow Rectangle
+
+*****
+*   *
+*   *
+*****
+
+*/
+
+import java.util.Scanner;
+
+ class hello{
+    public static void main(String args []){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                if(i==1 || i==n || j==1 || j==n){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
  }

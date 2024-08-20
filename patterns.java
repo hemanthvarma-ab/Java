@@ -257,7 +257,7 @@ import java.util.Scanner;
     }
  }
 
-/* 10. Palindrome Pyramid
+/* 10. Palindromic Pyramid
     1
    212
   32123
@@ -279,6 +279,42 @@ import java.util.Scanner;
             }
             for(int k=2;k<=i;k++){
                 System.out.print(k);
+            }
+            System.out.println();
+        }
+    }
+ }
+
+/* 11. Diamond Pattern
+      *
+    * * *
+  * * * * *
+* * * * * * *
+* * * * * * *
+  * * * * *
+    * * *
+      *
+ */
+import java.util.Scanner;
+ class hello{
+    public static void main(String args []){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=2*i-1;k++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for(int i=n;i>=1;i--){
+            for(int j=1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=2*i-1;k++){
+                System.out.print("* ");
             }
             System.out.println();
         }

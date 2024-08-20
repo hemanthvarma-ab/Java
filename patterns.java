@@ -213,7 +213,7 @@ import java.util.Scanner;
     }
  }
 
-/* 9. 
+/* 9. Butterfly pattern
 
 *      *
 **    **

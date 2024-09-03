@@ -75,3 +75,21 @@ public class hello {
         System.out.println(circumference(r));
     }
 }
+
+/*5. Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. x^n  */
+
+import java.util.Scanner;
+public class hello {
+    public static int powerof(int x,int n){
+        int  result=(int) Math.pow(x, n);
+        return result;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the base : ");
+        int x=sc.nextInt();
+        System.out.print("Enter the exponent : ");
+        int n=sc.nextInt();
+        System.out.println(powerof(x,n));
+    }
+}

@@ -1,4 +1,4 @@
-// Without using recurrsion
+// Without using Recursion
 
 import java.util.Scanner;
  class hello{
@@ -16,7 +16,7 @@ import java.util.Scanner;
     }
  }
 
-// Using recurrsion
+// Using Recursion
 import java.util.Scanner;
  class hello{
     public static int factorial(int n){

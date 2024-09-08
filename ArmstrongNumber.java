@@ -10,11 +10,12 @@ import java.util.*;
 class hello{
     static boolean armstrong(int n){
         int sum=0;
+        int digits=String.valueOf(n).length();
         int n1=n;
         while(n>0){
             int rem=n%10;
             n=n/10;
-            sum=sum+(int) Math.pow(rem, 3);
+            sum=sum+(int) Math.pow(rem,digits);
         }
         if(sum==n1) return true;
         else return false;

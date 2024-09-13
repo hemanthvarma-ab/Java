@@ -31,3 +31,35 @@ class hello{
         reversearray(arr, n);
     }
 }
+
+// Reversing an array using Recurrsion
+
+import java.util.*;
+class hello{
+    static void printarray(int[] arr,int n){
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+    static void reversearray(int[] arr,int p1,int p2){
+        if(p1<p2){
+            int temp=arr[p1];
+            arr[p1]=arr[p2];
+            arr[p2]=temp;
+            reversearray(arr,p1+1,p2-1);
+        }
+    }
+    public static void main(String args []){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("orginal array : ");
+        printarray(arr,n);
+        System.out.println();
+        reversearray(arr,0,(n-1));
+        printarray(arr,n);
+    }
+}

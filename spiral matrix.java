@@ -27,14 +27,18 @@ class hello{
                 System.out.print(arr[i][colend]+" ");
             }
             colend--;
-            for(int i=colend;i>=colstart;i--){
-                System.out.print(arr[rowend][i]+" ");
+            if(rowstart<=rowend){
+                for(int i=colend;i>=colstart;i--){
+                    System.out.print(arr[rowend][i]+" ");
+                }
+                rowend--;
             }
-            rowend--;
-            for(int i=rowend;i>=rowstart;i--){
-                System.out.print(arr[i][colstart]+" ");
-            }
-            colstart++;
+            if(colstart<=colend){
+                for(int i=rowend;i>=rowstart;i--){
+                    System.out.print(arr[i][colstart]+" ");
+                }
+                colstart++;
+            }   
         }
     }
 }
